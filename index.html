@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>Book Store</title>
+  </head>
+  <body>
+    <!-- start header  -->
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <div class="logo">
+            <img src="imgs/open-book.png" alt="" />
+            <div class="title">Book<span>land</span></div>
+          </div>
+        </a>
+        <div class="added">
+          BOOK ADDED TO CART
+        </div>
+        <a href="cart.html" class="shop">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>0</span>
+        </a>
+      </div>
+    </header>
+    <!-- end header  -->
+
+    <!-- start landing  -->
+    <section class="landing" id="landing">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="content">
+          <div class="quote">
+            <p>
+              Education is the most powerful weapon which you can use to change
+              the world
+            </p>
+            <h3>Nelson Mandela</h3>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="form">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Title, author, or topic"
+              />
+              <input type="submit" value="Search" id="search" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end landing -->
+
+    <!-- start Books  -->
+    <section class="books" id="books">
+      <div class="container">
+        <h1 class="results">Results: "<span></span>"</h1>
+        <div class="category list"></div>
+      </div>
+    </section>
+    <!-- end Books  -->
+
+    <!-- start loader  -->
+    <div class="loader-container">
+      <img src="imgs/loader-img.gif" alt="" />
+    </div>
+    <!-- end loader  -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
